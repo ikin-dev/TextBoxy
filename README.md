@@ -1,4 +1,5 @@
 # TextBoxy
+![textBoxy](textBoxy.png)
 
 A textbox overlay for your TTS output.
 
