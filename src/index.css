@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  font-family: 'Pixelify Sans', monospace;
+  color: #fff;
+  background: transparent;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+  background: transparent;
+}
+
+.overlay {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0 24px 8vh;
+  pointer-events: none;
+}
+
+.debug-panel {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  padding: 10px 12px;
+  color: #111;
+  background: #fff;
+  border: 1px solid #111;
+  font: 14px/1.4 monospace;
+  pointer-events: auto;
+}
+
+@media (max-width: 520px) {
+  .overlay {
+    padding-inline: 12px;
+  }
+}
